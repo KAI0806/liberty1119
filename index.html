@@ -56,10 +56,26 @@
             M177.7,20.2c-2.3-2.5-7-2.1-8.8,0.8c-1.8,2.9,0,7.3,3.3,8.2c2.3,0.6,4.9-0.4,6.2-2.4S179.3,22,177.7,20.2z"/>
         </svg>
     </div>
+
+    <!-- <div id="temporary">
+        <img class="temporaryImg" src="img/logo.png" alt="">
+    </div> -->
+
     <script>
         window.onload = function() {
         const spinner = document.getElementById('loading');
         spinner.classList.add('loaded');
+        }
+    </script>
+    <script>
+        function showBox() {
+        const showImg = document.getElementById('temporary');
+        timerId = setTimeout( closeBox , 3000 ); // タイマーを開始
+        }
+        // ボックスを消して、タイマーを終了
+        function closeBox() {
+        showImg.classList.add('loaded');
+        clearTimeout( timerId ); // タイマーを終了
         }
     </script>
     
