@@ -23,7 +23,7 @@ header ul li:nth-of-type(1) a {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     background: #00a0b4;
 }
 
