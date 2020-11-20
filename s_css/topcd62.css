@@ -708,23 +708,23 @@ min-height: 3.4rem;
 }
 
 .s1{
-    background: url(/img/s1.jpg) no-repeat center center/cover;;
+    background: url(../img/s1.jpg) no-repeat center center/cover;;
 }
 
 .s2{
-    background: url(/img/s2.jpg) no-repeat center center/cover;;
+    background: url(../img/s2.jpg) no-repeat center center/cover;;
 }
 
 .s3{
-    background: url(/img/s3.jpg) no-repeat center center/cover;;
+    background: url(../img/s3.jpg) no-repeat center center/cover;;
 }
 
 .s4{
-    background: url(/img/s4.jpg) no-repeat center center/cover;;
+    background: url(../img/s4.jpg) no-repeat center center/cover;;
 }
 
 .s5{
-    background: url(/img/s5.jpg) no-repeat center center/cover;;
+    background: url(../img/s5.jpg) no-repeat center center/cover;;
 }
 
 .about_kakomi_box a span {
