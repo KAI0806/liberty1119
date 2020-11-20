@@ -664,19 +664,16 @@ section {
 	}
 }
 .more_btn a {
-	text-align: center;
-	display: block;
-	font-size: 0.16rem;
-	color: #00A0B4;
-	border: 1px solid #00A0B4;
-	padding: 0.2rem;
-	border-radius: 40px;
-	text-decoration: none;
-	background-image: url("../img/link_arrow_green.png");
-	background-position: 90% center;
-	background-repeat: no-repeat;
-	background-size: 0.06rem;
+    text-align: center;
+    display: block;
+    font-size: 0.16rem;
+    color: #0084d1;
+    border: 1px solid #0084d1;
+    padding: 0.2rem;
+    border-radius: 40px;
+    text-decoration: none;
 }
+
 @media screen and (max-width:767px) {
 	.more_btn a {
 		font-size: 0.15rem;
@@ -684,12 +681,8 @@ section {
 	}
 }
 .more_btn a:hover {
-	background-color: #00A0B4;
-	color: #FFF;
-	background-image: url("../img/link_arrow_white.png");
-	background-position: 90% center;
-	background-repeat: no-repeat;
-	background-size: 0.06rem;
+    background-color: #0084d1;
+    color: #FFF;
 }
 .more_btn_white a {
 	text-align: center;
@@ -724,131 +717,220 @@ section {
 =========================*/
 
 footer {
-	background-color: #D4D5D8;
-	padding-top: 0.5rem;
-	padding-bottom: 0.2rem;
-	color: #181A31;
-	position: relative;
-	overflow: hidden;
+    background-color: #D4D5D8;
+    padding-top: 0.5rem;
+    padding-bottom: 0.2rem;
+    color: #181A31;
+    position: relative;
+    overflow: hidden;
 }
+
 @media screen and (max-width:767px) {}
+
 footer .container1100 {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
+
 @media screen and (max-width:767px) {
-	footer .container1100 {
-		box-sizing: border-box;
-	}
+    footer .container1100 {
+        box-sizing: border-box;
+    }
 }
+
 footer .footer_left {
-	width: 50%;
+    width: 30%;
 }
+
 @media screen and (max-width:767px) {
-	footer .footer_left {
-		width: 100%;
-	}
+    footer .footer_left {
+        width: 100%;
+    }
 }
+
 footer .footer_left h2 {
-	max-width: 2.9rem;
-	padding-bottom: 0.2rem;
+    max-width: 2.9rem;
+    padding-bottom: 0.2rem;
 }
+
+footer .footer_left a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
+}
+
 @media screen and (max-width:767px) {
-	footer .footer_left h2 {
-		max-width: 2.2rem;
-		margin: auto;
-	}
+    footer .footer_left h2 {
+        max-width: 2.2rem;
+        margin: auto;
+    }
 }
+
 footer .footer_left address {
-	font-size: 0.16rem;
-	font-weight: 700;
-	line-height: 1.8;
+    font-size: 0.16rem;
+    font-weight: 700;
+    line-height: 1.8;
 }
-footer .footer_left address br{
-	display: none;
+
+footer .footer_left address br {
+    display: none;
 }
+
 @media screen and (max-width:767px) {
-	footer .footer_left address br{
-		display: block;
-	}
+    footer .footer_left address br {
+        display: block;
+    }
 }
+
 @media screen and (max-width:767px) {
-	footer .footer_left address {
-		font-size: 0.14rem;
-	}
+    footer .footer_left address {
+        font-size: 0.14rem;
+    }
 }
+
 footer .footer_left address span {
-	font-size: 0.14rem;
-	display: block;
+    font-size: 0.14rem;
+    display: block;
 }
-footer .footer_right {
-	width: 40%;
-	display: flex;
-	flex-wrap: wrap;
+
+footer .footer_center {
+    width: 33%;
+    display: flex;
+    flex-wrap: wrap;
 }
+
 @media screen and (max-width:767px) {
-	footer .footer_right {
-		width: 100%;
-		display: block;
-		padding-top: 0.3rem;
-	}
+    footer .footer_center {
+        width: 100%;
+        display: block;
+        padding-top: 0.3rem;
+    }
 }
-footer .footer_right ul {
-	width: 33%;
+
+footer .footer_center ul {
+    width: 33%;
 }
+
 @media screen and (max-width:767px) {
-	footer .footer_right ul {
-		width: 100%;
-	}
+    footer .footer_center ul {
+        width: 100%;
+    }
 }
-footer .footer_right li {
-	line-height: 2.7;
+
+footer .footer_center li {
+    line-height: 2.7;
 }
+
 @media screen and (max-width:767px) {
-	footer .footer_right li {
-		line-height: 2;
-		width: 50%;
-		float: left;
-	}
+    footer .footer_center li {
+        line-height: 2;
+        width: 50%;
+        float: left;
+    }
 }
-footer .footer_right li a {
-	font-size: 0.14rem;
-	color: #181A31;
-	text-decoration: none;
-	font-weight: 700;
+
+footer .footer_center li a {
+    font-size: 0.14rem;
+    color: #181A31;
+    text-decoration: none;
+    font-weight: 700;
 }
+
 @media screen and (min-width:768px) {
-	footer .footer_right li a {
-		white-space: nowrap;
-	}
+    footer .footer_center li a {
+        white-space: nowrap;
+    }
 }
+
 @media screen and (max-width:767px) {
-	footer .footer_right li a {
-		font-size: 0.13rem;
-	}
+    footer .footer_center li a {
+        font-size: 0.13rem;
+    }
 }
-footer .footer_right li a::before {
-	content: "▶";
-	color: #00A0B4;
-	padding-right: 0.04rem;
-	font-size: 0.08rem;
-	position: relative;
-	top: -0.02rem;
+
+footer .footer_center li a::before {
+    content: "▶";
+    color: #00A0B4;
+    padding-right: 0.04rem;
+    font-size: 0.08rem;
+    position: relative;
+    top: -0.02rem;
 }
+
 footer p {
-	width: 100%;
-	text-align: center;
-	font-size: 0.12rem;
-	padding-top: 0.5rem;
+    width: 100%;
+    text-align: center;
+    font-size: 0.12rem;
+    padding-top: 0.5rem;
 }
+
 @media screen and (max-width:767px) {
-	footer p {
-		text-align: left;
-		font-size: 0.1rem;
-		padding-top: 0.3rem;
-	}
+    footer p {
+        text-align: left;
+        font-size: 0.1rem;
+        padding-top: 0.3rem;
+    }
 }
+
+footer .footer_right {
+    width: 33%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:767px) {
+    footer .footer_right {
+        width: 100%;
+        display: block;
+        padding-top: 0.3rem;
+    }
+}
+
+.btn-social-long-insta {
+	/*ボタンの下地*/
+	color: #FFF;/*文字・アイコン色*/
+	border-radius: 7px;/*角丸に*/
+	position: relative;
+	display: inline-block;
+	height: 50px;/*高さ*/
+	width: 190px;/*幅*/
+	text-align: center;/*中身を中央寄せ*/
+	font-size: 25px;/*文字のサイズ*/
+	line-height: 50px;/*高さと合わせる*/
+	background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;/*グラデーション①*/
+	overflow: hidden;/*はみ出た部分を隠す*/
+	text-decoration:none;/*下線は消す*/
+}
+
+.btn-social-long-insta:before {
+	/*グラデーション②*/
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;/*全体を覆う*/
+	height: 100%;/*全体を覆う*/
+	background: linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
+}
+
+.btn-social-long-insta .fa-instagram {
+	/*アイコン*/
+	font-size: 35px;/*アイコンサイズ*/
+	position: relative;
+	top: 4px;/*アイコン位置の微調整*/
+}
+
+.btn-social-long-insta span {
+	/*テキスト*/
+	display:inline-block;
+	position: relative;
+	transition: .5s
+}
+
+
 /*=============================
 ページの先頭に戻る
 =============================*/
@@ -867,20 +949,26 @@ footer p {
 		height: 0.4rem;
 	}
 }
+
+#back_to_top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0084d1;
+    opacity: 0.5;
+}
+
 #back_to_top a {
-	display: block;
-	width: 100%;
-	height: 100%;
-	cursor: pointer;
-	background-image: url("../img/back_top_icon.png");
-	background-repeat: no-repeat;
-	background-position: 0 0;
-	background-size: 100% 100%;
-	opacity: 0.5;
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: .4rem;
 }
-#back_to_top a:hover {
-	opacity: 1;
+
+#back_to_top:hover {
+    opacity: 1;
 }
+
 .f-playfair {
 	font-family: 'Playfair Display', serif;
 	font-style: italic;

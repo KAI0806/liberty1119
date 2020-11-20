@@ -1,5 +1,5 @@
 /*===============================
-@2020 wevies　##06469d
+@2020 wevies　#0084d1
 ===============================*/
 
 body {
@@ -139,7 +139,7 @@ a img {
 img {
     border: 0;
     max-width: 100%;
-    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 html {
@@ -826,15 +826,16 @@ section {
     text-align: center;
     display: block;
     font-size: 0.16rem;
-    color: #2c9617;
-    border: 1px solid #2c9617;
+    color: #0084d1;
+    border: 1px solid #0084d1;
     padding: 0.2rem;
     border-radius: 40px;
     text-decoration: none;
-    background-image: url("../img/link_arrow_green.png");
-    background-position: 90% center;
-    background-repeat: no-repeat;
-    background-size: 0.06rem;
+}
+
+.more_btn a::after {
+    content: ">";
+    padding-left: 0.2rem;
 }
 
 @media screen and (max-width:767px) {
@@ -845,12 +846,8 @@ section {
 }
 
 .more_btn a:hover {
-    background-color: #3da74b;
+    background-color: #0084d1;
     color: #FFF;
-    background-image: url("../img/link_arrow_white.png");
-    background-position: 90% center;
-    background-repeat: no-repeat;
-    background-size: 0.06rem;
 }
 
 .more_btn_white a {
@@ -913,7 +910,7 @@ footer .container1100 {
 }
 
 footer .footer_left {
-    width: 50%;
+    width: 30%;
 }
 
 @media screen and (max-width:767px) {
@@ -925,6 +922,14 @@ footer .footer_left {
 footer .footer_left h2 {
     max-width: 2.9rem;
     padding-bottom: 0.2rem;
+}
+
+footer .footer_left a{
+    text-decoration: none;
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 700;
+    font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
 }
 
 @media screen and (max-width:767px) {
@@ -961,43 +966,43 @@ footer .footer_left address span {
     display: block;
 }
 
-footer .footer_right {
+footer .footer_center {
     width: 40%;
     display: flex;
     flex-wrap: wrap;
 }
 
 @media screen and (max-width:767px) {
-    footer .footer_right {
+    footer .footer_center {
         width: 100%;
         display: block;
         padding-top: 0.3rem;
     }
 }
 
-footer .footer_right ul {
+footer .footer_center ul {
     width: 33%;
 }
 
 @media screen and (max-width:767px) {
-    footer .footer_right ul {
+    footer .footer_center ul {
         width: 100%;
     }
 }
 
-footer .footer_right li {
+footer .footer_center li {
     line-height: 2.7;
 }
 
 @media screen and (max-width:767px) {
-    footer .footer_right li {
+    footer .footer_center li {
         line-height: 2;
         width: 50%;
         float: left;
     }
 }
 
-footer .footer_right li a {
+footer .footer_center li a {
     font-size: 0.14rem;
     color: #181A31;
     text-decoration: none;
@@ -1005,20 +1010,20 @@ footer .footer_right li a {
 }
 
 @media screen and (min-width:768px) {
-    footer .footer_right li a {
+    footer .footer_center li a {
         white-space: nowrap;
     }
 }
 
 @media screen and (max-width:767px) {
-    footer .footer_right li a {
+    footer .footer_center li a {
         font-size: 0.13rem;
     }
 }
 
-footer .footer_right li a::before {
+footer .footer_center li a::before {
     content: "▶";
-    color: #00A0B4;
+    color: #0084d1;
     padding-right: 0.04rem;
     font-size: 0.08rem;
     position: relative;
@@ -1040,6 +1045,95 @@ footer p {
     }
 }
 
+footer .footer_right {
+    width: 20%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:767px) {
+    footer .footer_right {
+        width: 100%;
+        display: block;
+        padding-top: 0.3rem;
+    }
+}
+
+.btn-social-long-insta {
+	/*ボタンの下地*/
+	color: #FFF;/*文字・アイコン色*/
+	border-radius: 7px;/*角丸に*/
+	position: relative;
+	display: inline-block;
+	height: 50px;/*高さ*/
+	width: 190px;/*幅*/
+	text-align: center;/*中身を中央寄せ*/
+	font-size: 25px;/*文字のサイズ*/
+	line-height: 50px;/*高さと合わせる*/
+	background: linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;/*グラデーション①*/
+	overflow: hidden;/*はみ出た部分を隠す*/
+	text-decoration:none;/*下線は消す*/
+}
+
+.btn-social-long-insta:before {
+	/*グラデーション②*/
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;/*全体を覆う*/
+	height: 100%;/*全体を覆う*/
+	background: linear-gradient(15deg, #ffdb2c, rgb(249, 118, 76) 25%, rgba(255, 77, 64, 0) 50%) no-repeat;
+}
+
+.btn-social-long-insta .fa-instagram {
+	/*アイコン*/
+	width: 30px;/*アイコンサイズ*/
+	position: relative;
+    top: 4px;/*アイコン位置の微調整*/
+    left: -3px;
+}
+
+.btn-social-long-insta span {
+	/*テキスト*/
+	display:inline-block;
+	position: relative;
+	transition: .5s
+}
+
+.btn-social-long-line {
+    color: #FFF;/*文字・アイコン色*/
+    border-radius: 7px;/*角丸に*/
+    display: inline-block;
+    height: 50px;/*高さ*/
+    width: 190px;/*幅*/
+    text-align: center;/*中身を中央寄せ*/
+    font-size: 25px;/*文字のサイズ*/
+    line-height: 50px;/*高さと合わせる*/
+    background: #06ba00;
+    overflow: hidden;/*はみ出た部分を隠す*/
+    text-decoration:none;/*下線は消す*/
+  }
+  
+  .btn-social-long-line .fa-line {
+    width: 35px;/*アイコンサイズ*/
+	position: relative;
+    top: 10px;/*アイコン位置の微調整*/
+    left: -35px;
+  }
+  
+  .btn-social-long-line span {
+    /*テキスト*/
+    display:inline-block;
+    transition: .5s;
+  }
+  
+  .btn-social-long-insta:hover,
+  .btn-social-long-line:hover {
+    /*ホバーで一周回転*/
+    -webkit-transform: rotateX(360deg);
+    transform: rotateX(360deg);
+  }
 
 /*=============================
 ページの先頭に戻る
@@ -1061,19 +1155,22 @@ footer p {
     }
 }
 
-#back_to_top a {
-    display: block;
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
-    background-image: url("../img/back_top_icon.png");
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    background-size: 100% 100%;
+#back_to_top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0084d1;
     opacity: 0.5;
 }
 
-#back_to_top a:hover {
+#back_to_top a {
+    display: block;
+    cursor: pointer;
+    color: white;
+    font-size: .4rem;
+}
+
+#back_to_top:hover {
     opacity: 1;
 }
 
