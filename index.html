@@ -64,20 +64,10 @@
 
     <script>
         window.onload = function() {
-        const spinner = document.getElementById('loading');
-        spinner.classList.add('loaded');
-        }
-    </script>
-    <script>
-        function showBox() {
-        const showImg = document.getElementById('temporary');
-        timerId = setTimeout( closeBox , 3000 ); // タイマーを開始
-        }
-        // ボックスを消して、タイマーを終了
-        function closeBox() {
-        showImg.classList.add('loaded');
-        clearTimeout( timerId ); // タイマーを終了
-        }
+            setTimeout(function(){
+                const spinner = document.getElementById("loading");
+                spinner.classList.add('loaded');
+        }, 3200)}
     </script>
     
     <!--ヘッダー-->
