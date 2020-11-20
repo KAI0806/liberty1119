@@ -11,7 +11,7 @@ header ul li:nth-of-type(1) a {
     width: 100vw;
     height: 100vh;
     transition: all 1s;
-    background-color: #00a0b4;
+    background-color: #41c3ff;
 
     position: fixed;
     top: 0;
@@ -24,7 +24,7 @@ header ul li:nth-of-type(1) a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: #00a0b4;
+    background: #41c3ff;
 }
 
 .path {
@@ -143,8 +143,19 @@ body.menu_open header.fixed h1 a {
     }
 }
 
-body.toppage #sp_mail_btn a {
-    background-image: url("../common/img/sp_mail_btn.png");
+body.toppage #line_btn a {
+    background-image: url("../img/LINE.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    text-indent: -9999px;
+    height: 100%;
+    width: 100%;
+}
+
+body.toppage #insta_btn a {
+    background-image: url("../img/Instagram_color.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -219,7 +230,7 @@ MV
 }
 
 #mv h2 {
-    text-shadow: -1px 1px 5px #739455;
+    text-shadow: -1px 1px 5px #41c3ff;
     text-underline-position: under;
     text-align: center;
     position: absolute;
@@ -314,7 +325,7 @@ MV
 }
 
 .mv01 {
-    background-image: url("../img/top_mv01.jpg");
+    background-image: url("../img/mv01.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -323,7 +334,7 @@ MV
 
 @media screen and (max-width: 767px) {
     .mv01 {
-        background-image: url("../img/top_mv01_sp.jpg");
+        background-image: url("../img/mv01.jpg");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -331,16 +342,16 @@ MV
 }
 
 .mv02 {
-    background-image: url("../img/top_mv02.jpg");
+    background-image: url("../img/mv02.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    animation: scale 18s linear 4.5s infinite;
+    animation: scale 18s linear 0s infinite;
 }
 
 @media screen and (max-width: 767px) {
     .mv02 {
-        background-image: url("../img/top_mv02_sp.jpg");
+        background-image: url("../img/mv02.jpg");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -348,16 +359,16 @@ MV
 }
 
 .mv03 {
-    background-image: url("../img/top_mv03.jpg");
+    background-image: url("../img/mv03.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    animation: scale 18s linear 9s infinite;
+    animation: scale 18s linear 0s infinite;
 }
 
 @media screen and (max-width: 767px) {
     .mv03 {
-        background-image: url("../img/top_mv03_sp.jpg");
+        background-image: url("../img/mv03.jpg");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -365,16 +376,16 @@ MV
 }
 
 .mv04 {
-    background-image: url("../img/top_mv04.jpg");
+    background-image: url("../img/mv04.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    animation: scale 18s linear 13.5s infinite;
+    animation: scale 18s linear 0s infinite;
 }
 
 @media screen and (max-width: 767px) {
     .mv04 {
-        background-image: url("../img/top_mv04_sp.jpg");
+        background-image: url("../img/mv04.jpg");
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
@@ -414,7 +425,7 @@ MV
     height: 40px;
     width: 1px;
     margin: auto;
-    background-color: #33ac1b;
+    background-color: #06469d;
 }
 
 @media screen and (max-width: 767px) {
@@ -431,8 +442,10 @@ introduction
 #introduction {
     background-image: url("../img/top_intro_bg.jpg");
     background-repeat: no-repeat;
-    background-position: center bottom;
+    background-position: center top;
     background-size: cover;
+    background-color: #ffffffb7;
+    background-blend-mode: overlay;
     /*
 max-height: 6rem;
 min-height: 4rem;
@@ -468,10 +481,10 @@ min-height: 3.4rem;
     font-size: 0.48rem;
     font-family: "游明朝", YuMincho, "Hiragino Mincho ProN W3", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
     width: 100%;
-    background-image: url("../img/logo_bg.png");
+    /* background-image: url("../img/logo_bg.png");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: contain;
+    background-size: contain; */
     padding-top: 1.4rem;
     padding-bottom: 1.4rem;
     letter-spacing: -1px;

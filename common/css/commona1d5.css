@@ -289,11 +289,7 @@ header ul {
 		padding-top: 0.2rem;
 	}
 }
-@media screen and (min-width:768px) {
-	header nav {
-		display: block !important;
-	}
-}
+
 @media screen and (max-width:767px) {
 	header nav {
 		position: fixed;
@@ -466,13 +462,13 @@ header ul li.no_slash::after, header ul li:last-child::after {
 }
 /* スマホ時のメールボタン */
 
-#sp_mail_btn {
+/* #sp_mail_btn {
 	position: absolute;
 	top: 0.2rem;
 	right: 0.7rem;
 	width: 0.3rem;
 	z-index: 10;
-}
+} */
 /* スマホ時の閉じるボタン */
 
 #sp_menu_close {
@@ -605,19 +601,19 @@ section {
 	text-align: center;
 	line-height: 1.7;
 	padding-top: 0.6rem;
-	background-image: url("../img/ttl_logo.png");
+	/* background-image: url("../img/ttl_logo.png");
 	background-position: center top;
 	background-repeat: no-repeat;
-	background-size: auto 0.4rem;
+	background-size: auto 0.4rem; */
 	padding-bottom: 0.4rem;
 }
 @media screen and (max-width:767px) {
 	.section_ttl {
 		padding-top: 0.4rem;
-		background-image: url("../img/ttl_logo.png");
+		/* background-image: url("../img/ttl_logo.png");
 		background-position: center top;
 		background-repeat: no-repeat;
-		background-size: auto 0.28rem;
+		background-size: auto 0.28rem; */
 		padding-bottom: 0.4rem;
 	}
 }

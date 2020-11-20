@@ -3,4 +3,3 @@ window.addEventListener("DOMContentLoaded", function(){
         document.getElementById("temporary").classList.remove("active");
     }, 4000)
 })
-    

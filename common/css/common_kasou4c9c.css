@@ -61,7 +61,7 @@ header{
   display: flex;
   align-items:center;
 }
-@media screen and (max-width:480px) {
+/* @media screen and (max-width:480px) {
 header nav ul{
   top: 50%;
   transform: translateY(-50%);
@@ -91,7 +91,7 @@ header ul li:last-child a:hover {
   color: #fff !important;
   background-color: #000 !important;
   background-image: url("../img/link_arrow_white.png") !important;
-  }
+  } */
   @media screen and (max-width:900px) {
     header{
       margin-bottom: 16px;

@@ -1,5 +1,5 @@
 /*===============================
-@2020 wevies
+@2020 wevies　##06469d
 ===============================*/
 
 body {
@@ -371,40 +371,33 @@ header ul {
     }
 }
 
-@media screen and (max-width:900px) {
-    header ul {
-        position: relative;
-        top: inherit;
-        right: inherit;
-        margin: auto;
-        text-align: center;
-        padding-top: 0.2rem;
-    }
+
+header ul {
+    position: relative;
+    top: inherit;
+    right: inherit;
+    margin: auto;
+    text-align: center;
+    padding-top: 0.2rem;
 }
 
-@media screen and (min-width:768px) {
-    header nav {
-        display: block !important;
-    }
+
+header nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 3;
+    background-color: rgb(30 44 32 / 95%);
+    height: 100%;
+    box-sizing: border-box;
+    display: none;
 }
 
-@media screen and (max-width:767px) {
-    header nav {
-        position: fixed;
-        top: 0;
-        right: 0;
-        width: 100%;
-        z-index: 3;
-        background-color: rgb(30 44 32 / 95%);
-        height: 100%;
-        box-sizing: border-box;
-        display: none;
-    }
-    header ul {
-        width: 100%;
-        padding-top: 24%;
-        transform: translateY(0%);
-    }
+header ul {
+    width: 100%;
+    padding-top: 24%;
+    transform: translateY(0%);
 }
 
 header ul li {
@@ -413,14 +406,13 @@ header ul li {
     letter-spacing: 0.1em;
 }
 
-@media screen and (max-width:767px) {
-    header ul li {
-        display: block;
-        line-height: 3;
-    }
-    header ul li.active a {
-        border-bottom: 2px solid #008090;
-    }
+
+header ul li {
+    display: block;
+    line-height: 3;
+}
+header ul li.active a {
+    border-bottom: 2px solid #008090;
 }
 
 header ul li::after {
@@ -476,7 +468,7 @@ header ul li a {
 	border-bottom: 2px solid #008090;
 }*/
 
-header ul li a::before {
+/* header ul li a::before {
     content: "";
     position: absolute;
     bottom: -2px;
@@ -496,16 +488,16 @@ header ul li a::before {
     height: 2px;
     background: #008090;
     transition: all 0.3s ease;
-}
+} */
 
-header ul li a:hover::before,
+/* header ul li a:hover::before,
 .fixed ul li a:hover::before {
     width: 100%;
-}
+} */
 
-header.fixed ul li a {
+/* header.fixed ul li a {
     color: #000;
-}
+} */
 
 body.menu_open header ul li a {
     color: #FFF;
@@ -588,14 +580,21 @@ header ul li:last-child::after {
 
 /* スマホ時のメールボタン */
 
-#sp_mail_btn {
+#line_btn{
     position: absolute;
     top: 0.2rem;
-    right: 0.7rem;
-    width: 0.3rem;
+    right: 1.3rem;
+    width: 29px;
     z-index: 10;
 }
 
+#insta_btn {
+    position: absolute;
+    top: 0.2rem;
+    right: 0.7rem;
+    width: 29px;
+    z-index: 10;
+}
 
 /* スマホ時の閉じるボタン */
 
@@ -629,25 +628,18 @@ header ul li:last-child::after {
 /* 開閉ボタン */
 
 #SPnaviBtn {
-    display: none;
+    position: absolute;
+    top: 0.2rem;
+    right: 0.1rem;
+    width: 0.5rem;
+    height: 0.3rem;
+    border-radius: 4px;
+    color: #1a90d0;
+    text-align: center;
+    font-size: 0.55em;
+    display: block;
+    z-index: 10;
 }
-
-@media screen and (max-width: 767px) {
-    #SPnaviBtn {
-        position: absolute;
-        top: 0.2rem;
-        right: 0.1rem;
-        width: 0.5rem;
-        height: 0.3rem;
-        border-radius: 4px;
-        color: #1a90d0;
-        text-align: center;
-        font-size: 0.55em;
-        display: block;
-        z-index: 10;
-    }
-}
-
 .menu-trigger,
 .menu-trigger span {
     display: inline-block;
@@ -755,20 +747,20 @@ section {
     text-align: center;
     line-height: 1.7;
     padding-top: 0.6rem;
-    background-image: url("../img/ttl_logo.png");
+    /* background-image: url("../img/ttl_logo.png");
     background-position: center top;
     background-repeat: no-repeat;
-    background-size: auto 0.4rem;
+    background-size: auto 0.4rem; */
     padding-bottom: 0.4rem;
 }
 
 @media screen and (max-width:767px) {
     .section_ttl {
         padding-top: 0.4rem;
-        background-image: url("../img/ttl_logo.png");
+        /* background-image: url("../img/ttl_logo.png");
         background-position: center top;
         background-repeat: no-repeat;
-        background-size: auto 0.28rem;
+        background-size: auto 0.28rem; */
         padding-bottom: 0.4rem;
     }
 }
