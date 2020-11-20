@@ -1,6 +1,6 @@
-window.addEventListener("load", function(){
+window.addEventListener("DOMContentLoaded", function(){
     setTimeout(function(){
         document.getElementById("temporary").classList.remove("active");
-    }, 1000)
+    }, 4000)
 })
     

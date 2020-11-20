@@ -64,9 +64,10 @@
 
     <script>
         window.onload = function() {
-        const spinner = document.getElementById('loading');
-        spinner.classList.add('loaded');
-        }
+            setTimeout(function(){
+                const spinner = document.getElementById("loading");
+                spinner.classList.add('loaded');
+        }, 3000)}
     </script>
     
     <!--ヘッダー-->
