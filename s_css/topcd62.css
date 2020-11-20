@@ -62,23 +62,26 @@ animation: dash2 5s linear  infinite;
     visibility: hidden;
 }
 
-#temporary{
+.temporary{
     width: 100vw;
     height: 100vh;
     transition: all 1s;
     background-color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     position: fixed;
     top: 0;
     left: 0;
     z-index: 8888;
+    opacity: 0;
+    visibility: hidden;
 }
 
-.temporaryImg{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+.temporary.active{
+    opacity: 1;
+    visibility: visible;
 }
 
 /*============================
