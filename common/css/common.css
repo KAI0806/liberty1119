@@ -1168,6 +1168,7 @@ footer .footer_right {
     cursor: pointer;
     color: white;
     font-size: .4rem;
+    text-decoration: none;
 }
 
 #back_to_top:hover {
