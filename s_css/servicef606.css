@@ -48,9 +48,9 @@ header ul li:nth-of-type(1) a {
 .service_mv {
 	position: relative;
 	padding-top: 37.5%;
-	background-image: url("../img/top_service_header.jpg");
+	background-image: url("../img/tokyo.jpg");
 	background-repeat: no-repeat;
-	background-position: center top;
+	background-position: center bottom;
 	background-size: 100% auto;
 }
 @media screen and (max-width:900px) {
@@ -61,7 +61,7 @@ header ul li:nth-of-type(1) a {
 @media screen and (max-width:767px) {
 	.service_mv {
 		padding-top: 2.7rem;
-		background-image: url("../img/top_service_header_sp.jpg");
+		background-image: url("../img/tokyo.jpg");
 		background-repeat: no-repeat;
 		background-position: center top;
 		background-size: 100% auto;
@@ -74,11 +74,11 @@ header ul li:nth-of-type(1) a {
 	transform: translateX(-50%) translateY(-50%);
 	text-align: center;
 	line-height: 1.7;
-	padding-top: 0.6rem;
+	/* padding-top: 0.6rem;
 	background-image:url("../common/img/ttl_logo_white.png");
 	background-position: center top;
 	background-repeat: no-repeat;
-	background-size: auto 0.47rem;
+	background-size: auto 0.47rem; */
 	font-size: 0.48rem;
 	letter-spacing: 0.14em;
 	color: #fff;
@@ -154,9 +154,9 @@ header ul li:nth-of-type(1) a {
 	}
 }
 .service_intro .introList .item {
-	width: 24.77%;
-	max-width: 322px;
-	background: #282c3c;
+	width: 33%;
+	max-width: 400px;
+	background: #0084d1;
 	color: #fff;
 	text-align: center;
 }
@@ -170,7 +170,7 @@ header ul li:nth-of-type(1) a {
 	}
 }
 .service_intro .introList .item:nth-child(2n) {
-	background: #282c50;
+	background: #00a2ff;
 }
 .service_intro .introList .item .photo {
 	position: relative;
@@ -183,7 +183,7 @@ header ul li:nth-of-type(1) a {
 	bottom: -.2rem;
 	left: 50%;
 	transform: translateX(-50%);
-	background: #008090;
+	background: #033780;
 }
 @media screen and (max-width:767px) {
 	.service_intro .introList .item .photo:after {
@@ -194,9 +194,9 @@ header ul li:nth-of-type(1) a {
 		width: 100%;
 	}
 }
-img {
+/* img {
 	vertical-align: bottom;
-}
+} */
 .service_intro .introList .item .photo .number {
 	position: absolute;
 	top: 50%;
@@ -299,8 +299,8 @@ img {
 }
 .service_construction .box:before {
 	content: '';
-	background: url('../img/service/logo_bg.png');
-	background-size: cover;
+	/* background: url('../img/service/logo_bg.png');
+	background-size: cover; */
 	height: 4.12rem;
 	width: 6.44rem;
 	position: absolute;
@@ -374,20 +374,7 @@ img {
     z-index: 2;
 	}
 }
-/*.service_construction .box .ph {
-	width: 8rem;
-	margin: -1.55rem -2.5rem 0 auto;
-	float: right;
-}
-@media screen and (max-width:767px) {
-	.service_construction .box .ph {
-		width: 100%;
-		float: none;
-		margin: 0 -.2rem 0 auto;
-		position: relative;
-    z-index: 1;
-	}
-}*/
+
 .service_construction .listJob {
 	display: flex;
 	padding: 0 1rem;
@@ -425,7 +412,7 @@ img {
 	bottom: -.2rem;
 	left: 50%;
 	transform: translateX(-50%);
-	background: #008090;
+	background: #033780;
 }
 @media screen and (max-width:767px) {
 	.service_construction .listJob .item .ph:after {
